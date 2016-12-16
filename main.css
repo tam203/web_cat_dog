@@ -1,3 +1,4 @@
+
 html, body {
   background: #333;
 }
@@ -25,7 +26,6 @@ html, body {
 
 
 #startbutton {
-  display: none;
   position:absolute;
   bottom: 1em;
   width: 100%;
@@ -71,7 +71,7 @@ html, body {
 }
 
 #noCam {
-    display: block;
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
