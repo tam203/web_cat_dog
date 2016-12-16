@@ -1,7 +1,9 @@
 # web cat dog
 A example of using (KerasJS)[https://github.com/transcranial/keras-js] and (WebRTC)[https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API] to create a app to predict if an image is a cat or dog.
 
-*(See it in action)[https://theo-cat-or-dog.s3-eu-west-1.amazonaws.com/index.html]*
+It needs WebRTC (which is still lacking in many browsers most noticeably Safari at time of writing)[http://iswebrtcreadyyet.com/].
+But if you have a new-ish Android  
+*(see it in action)[https://theo-cat-or-dog.s3-eu-west-1.amazonaws.com/index.html]*
 
 # With thanks:
 
