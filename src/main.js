@@ -1,10 +1,20 @@
 // Set up our event listener to run the startup process
 // once loading is complete.
 
-// Shim
 
-//require('webrtc-adapter');
 var capture = require('./capture');
 window.addEventListener('load', function(){
-  capture.startup()
+
+  // Check compatability
+  getMedia = ( navigator.getUserMedia ||
+                         navigator.webkitGetUserMedia ||
+                         navigator.mozGetUserMedia ||
+                         navigator.msGetUserMedia);
+  if(getMedia){
+    capture.startup()
+  } else {
+    document.getElementById('noCam').style.display = 'block'
+  }
+
+
 }, false);

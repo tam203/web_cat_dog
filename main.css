@@ -1,3 +1,7 @@
+html, body {
+  background: #333;
+}
+
 #video {
   border: 1px solid black;
   box-shadow: 2px 2px 3px black;
@@ -21,6 +25,7 @@
 
 
 #startbutton {
+  display: none;
   position:absolute;
   bottom: 1em;
   width: 100%;
@@ -65,6 +70,14 @@
   background: rgba(255,255,255, 0.5)
 }
 
-html, body {
-  background: #333;
+#noCam {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    font-size: 150%;
+    background: #333;
 }

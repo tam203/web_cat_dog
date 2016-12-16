@@ -1,7 +1,7 @@
 const ndarray = require("ndarray");
 const model = require("./model");
 const showResult = require('./showResult');
-
+const Promise = require('promise');
 
 const MODEL_EXPECTED_DIM = 150;
 
@@ -33,6 +33,11 @@ function error(msg){
 }
 
 function chooseCam(){
+
+  // Some devices might not support enumerateDevices
+  if(!navigator.mediaDevices || !navigator.mediaDevices.enumerateDevice){
+    Promise.resolve(null)
+  }
   // Serch all devices for one that is a videoinput and is labeled 'back'
   // Returns a promise which resolves to a device id or null.
   return navigator.mediaDevices.enumerateDevices().then((devices) => {
