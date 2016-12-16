@@ -1,17 +1,17 @@
 # web cat dog
-A example of using (KerasJS)[https://github.com/transcranial/keras-js] and (WebRTC)[https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API] to create a app to predict if an image is a cat or dog.
+A example of using [KerasJS](https://github.com/transcranial/keras-js) and [WebRTC](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API) to create a app to predict if an image is a cat or dog.
 
-It needs WebRTC (which is still lacking in many browsers most noticeably Safari at time of writing)[http://iswebrtcreadyyet.com/].
+It needs WebRTC [which is still lacking in many browsers most noticeably Safari at time of writing](http://iswebrtcreadyyet.com/).
 But if you have a new-ish Android  
-*(see it in action)[https://theo-cat-or-dog.s3-eu-west-1.amazonaws.com/index.html]*
+[see it in action](https://theo-cat-or-dog.s3-eu-west-1.amazonaws.com/index.html).
 
 # With thanks:
 
-Model trained following (this Keras blog)[https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html].
+Model trained following [this Keras blog](https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html).
 
-WebRTC help from Mozzila particularly (this post)[https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API/Taking_still_photos]
+WebRTC help from Mozzila particularly [this post](https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API/Taking_still_photos).
 
-(Giorgio Cam)[https://aiexperiments.withgoogle.com/giorgio-cam] from Google AI experiments for inspiration.
+[Giorgio Cam](https://aiexperiments.withgoogle.com/giorgio-cam) from Google AI experiments for inspiration.
 
 # WebRTC and https
 If not running on local host then https is required to allow WebRTC.
